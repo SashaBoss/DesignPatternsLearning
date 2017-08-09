@@ -1,0 +1,11 @@
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace Observer.Contracts
+{
+    public interface ISubject
+    {
+        void RegisterObserver(IObserver o);
+        void RemoveObserver(IObserver o);
+        void NotifyObservers();
+    }
+}
