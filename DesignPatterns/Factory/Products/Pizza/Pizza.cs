@@ -1,23 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
+using Factory.Products.Ingredients;
 
-namespace Factory.Products
+namespace Factory.Products.Pizza
 {
     public abstract class Pizza
     {
         protected string Name;
-        protected string Dough;
-        protected string Sauce;
-        protected List<string> Toppings = new List<string>();
+        protected Dough Dough;
+        protected Sauce Sauce;
+        protected Veggies Veggies;
+        protected Cheese Cheese;
+        protected Pepperoni Pepperoni;
+        protected Clams Clam;
 
-        public void Prepare()
-        {
-            Console.WriteLine($"Preparing {Name}");
-            Console.WriteLine("Tossing dought...");
-            Console.WriteLine("Adding sauce...");
-            Console.WriteLine("Adding toppings...");
-            Toppings.ForEach(Console.WriteLine);
-        }
+        public abstract void Prepare();
 
         public virtual void Bake()
         {

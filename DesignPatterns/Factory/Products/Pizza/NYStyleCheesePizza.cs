@@ -1,4 +1,4 @@
-﻿namespace Factory.Products
+﻿namespace Factory.Products.Pizza
 {
     public class NYStyleCheesePizza : Pizza
     {

@@ -1,4 +1,5 @@
 ﻿using Factory.Products;
+using Factory.Products.Pizza;
 
 namespace Factory.Factories
 {
