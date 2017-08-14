@@ -43,14 +43,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GarageDoor.cs" />
-    <Compile Include="GarageDoorOpenCommand.cs" />
-    <Compile Include="ICommand.cs" />
-    <Compile Include="Light.cs" />
-    <Compile Include="LightOnCommand.cs" />
+    <Compile Include="Receivers\GarageDoor.cs" />
+    <Compile Include="Commands\GarageDoorOpenCommand.cs" />
+    <Compile Include="Commands\ICommand.cs" />
+    <Compile Include="Receivers\Light.cs" />
+    <Compile Include="Commands\LightOffCommand.cs" />
+    <Compile Include="Commands\LightOnCommand.cs" />
+    <Compile Include="Commands\NoCommand.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SimpleRemoteControl.cs" />
+    <Compile Include="Controllers\RemoteControl.cs" />
+    <Compile Include="Controllers\SimpleRemoteControl.cs" />
+    <Compile Include="Receivers\Stereo.cs" />
+    <Compile Include="Commands\StereoOffCommand.cs" />
+    <Compile Include="Commands\StereoOnWithCdCommand.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
