@@ -15,5 +15,10 @@ namespace Command.Commands
         {
             _garage.OpenDoor();
         }
+
+        public void Undo()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

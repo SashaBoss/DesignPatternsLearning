@@ -17,5 +17,10 @@ namespace Command.Commands
             _stereo.SetCd("Best of Techno");
             _stereo.SetVolume(100);
         }
+
+        public void Undo()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

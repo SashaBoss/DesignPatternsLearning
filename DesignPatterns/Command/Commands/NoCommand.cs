@@ -8,5 +8,10 @@ namespace Command.Commands
         {
             Console.WriteLine("No command set");
         }
+
+        public void Undo()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
