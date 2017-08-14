@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\CeilingFanHighCommand.cs" />
+    <Compile Include="Commands\MacroCommand.cs" />
+    <Compile Include="Receivers\CeilingFan.cs" />
     <Compile Include="Receivers\GarageDoor.cs" />
     <Compile Include="Commands\GarageDoorOpenCommand.cs" />
     <Compile Include="Commands\ICommand.cs" />

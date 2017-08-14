@@ -8,6 +8,7 @@ namespace Command.Controllers
         private const int ButtonsCount = 7;
         private readonly ICommand[] _onCommands;
         private readonly ICommand[] _offCommands;
+        private ICommand _undoCommand;
 
         public RemoteControl()
         {
@@ -20,6 +21,7 @@ namespace Command.Controllers
                 _onCommands[i] = noCommand;
                 _offCommands[i] = noCommand;
             }
+            _undoCommand = noCommand;
         }
 
         public void SetCommand(int slot, ICommand onCommand, ICommand offCommand)
@@ -31,11 +33,18 @@ namespace Command.Controllers
         public void OnButtonWasPushed(int slot)
         {
             _onCommands[slot].Execute();
+            _undoCommand = _onCommands[slot];
         }
 
         public void OffButtonWasPushed(int slot)
         {
             _offCommands[slot].Execute();
+            _undoCommand = _offCommands[slot];
+        }
+
+        public void UndoButtonWasPushed()
+        {
+            _undoCommand.Undo();
         }
 
         public override string ToString()
