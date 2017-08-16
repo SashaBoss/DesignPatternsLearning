@@ -13,7 +13,7 @@ namespace AdapterFacade.DuckAdapter
 
         public void Fly()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Fly less");
         }
 
         public void Gobble()
