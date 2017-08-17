@@ -1,0 +1,31 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace State
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            GumballMachine machine = new GumballMachine(3);
+
+            Console.WriteLine(machine);
+
+            machine.InsertQuarter();
+            machine.TurnCrank();
+
+            Console.WriteLine(machine);
+
+            machine.InsertQuarter();
+            machine.EjectQuarter();
+            machine.TurnCrank();
+
+            Console.WriteLine(machine);
+
+            Console.ReadLine();
+        }
+    }
+}

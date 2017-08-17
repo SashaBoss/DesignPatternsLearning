@@ -10,7 +10,7 @@ namespace Factory.Factories
             switch (type)
             {
                 case "cheese":
-                    return new ChicagoStyleCheesePizza();
+                    //return new ChicagoStyleCheesePizza(type);
                 default:
                     {
                         return null;
