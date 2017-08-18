@@ -4,7 +4,7 @@ namespace State.States
 {
     public class NoQuarterState : IState
     {
-        private GumballMachine _machine;
+        private readonly GumballMachine _machine;
 
         public NoQuarterState(GumballMachine machine)
         {
