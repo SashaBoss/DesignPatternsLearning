@@ -1,29 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace State
 {
     class Program
     {
+        private const int GumballsCount = 10000;
+
         static void Main(string[] args)
         {
-            GumballMachine machine = new GumballMachine(3);
+            GumballMachine machine = new GumballMachine(GumballsCount);
 
-            Console.WriteLine(machine);
-
-            machine.InsertQuarter();
-            machine.TurnCrank();
-
-            Console.WriteLine(machine);
-
-            machine.InsertQuarter();
-            machine.EjectQuarter();
-            machine.TurnCrank();
-
-            Console.WriteLine(machine);
+            for (int i = 0; i < GumballsCount; i++)
+            {
+                machine.InsertQuarter();
+                machine.TurnCrank();
+            }
 
             Console.ReadLine();
         }
