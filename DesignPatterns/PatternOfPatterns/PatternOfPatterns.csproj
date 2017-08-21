@@ -43,26 +43,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbsractDuckFactory.cs" />
-    <Compile Include="CountingDuckFactory.cs" />
-    <Compile Include="DuckCall.cs" />
-    <Compile Include="DuckFactory.cs" />
+    <Compile Include="Factories\AbsractDuckFactory.cs" />
+    <Compile Include="Factories\CountingDuckFactory.cs" />
+    <Compile Include="Ducks\DuckCall.cs" />
+    <Compile Include="Factories\DuckFactory.cs" />
     <Compile Include="Flock.cs" />
-    <Compile Include="Goose.cs" />
-    <Compile Include="GooseAdapter.cs" />
-    <Compile Include="AbstractGooseFactory.cs" />
-    <Compile Include="GooseFactory.cs" />
-    <Compile Include="IObserver.cs" />
-    <Compile Include="IQuackable.cs" />
-    <Compile Include="MallardDuck.cs" />
-    <Compile Include="Observable.cs" />
+    <Compile Include="Ducks\Goose.cs" />
+    <Compile Include="Ducks\GooseAdapter.cs" />
+    <Compile Include="Factories\AbstractGooseFactory.cs" />
+    <Compile Include="Factories\GooseFactory.cs" />
+    <Compile Include="Observables\IObserver.cs" />
+    <Compile Include="Observables\IQuackable.cs" />
+    <Compile Include="Ducks\MallardDuck.cs" />
+    <Compile Include="Observables\Observable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuackCounter.cs" />
-    <Compile Include="IQuackObservable.cs" />
-    <Compile Include="Quackologist.cs" />
-    <Compile Include="RedheadDuck.cs" />
-    <Compile Include="RubberDuck.cs" />
+    <Compile Include="Observables\IQuackObservable.cs" />
+    <Compile Include="Observables\Quackologist.cs" />
+    <Compile Include="Ducks\RedheadDuck.cs" />
+    <Compile Include="Ducks\RubberDuck.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

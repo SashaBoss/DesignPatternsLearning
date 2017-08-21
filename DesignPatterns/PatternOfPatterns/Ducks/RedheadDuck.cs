@@ -1,23 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using PatternOfPatterns.Observables;
 
-namespace PatternOfPatterns
+namespace PatternOfPatterns.Ducks
 {
-    class RubberDuck : IQuackable
+    class RedheadDuck : IQuackable
     {
         private readonly Observable _observable;
 
-        public RubberDuck()
+        public RedheadDuck()
         {
             _observable = new Observable(this);
         }
 
         public void Quack()
         {
-            Console.WriteLine("Squeek");
+            Console.WriteLine("Quack");
             NotifyObservers();
         }
 

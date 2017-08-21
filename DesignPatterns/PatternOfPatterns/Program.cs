@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PatternOfPatterns.Factories;
+using PatternOfPatterns.Observables;
 
 namespace PatternOfPatterns
 {
@@ -41,6 +43,7 @@ namespace PatternOfPatterns
             flockOfDucks.Add(duckCall);
             flockOfDucks.Add(rubberDuck);
             flockOfDucks.Add(gooseDuck);
+            flockOfDucks.Add(redheadDuck);
 
             Flock flockOfMallards = new Flock();
             IQuackable mallardOne = _duckFactory.CreateMallardDuck();
@@ -52,7 +55,6 @@ namespace PatternOfPatterns
             flockOfMallards.Add(mallardTwo);
             flockOfMallards.Add(mallardThree);
             flockOfMallards.Add(mallardFour);
-
 
             flockOfDucks.Add(flockOfMallards);
 

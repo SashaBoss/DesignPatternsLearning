@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using PatternOfPatterns.Ducks;
+using PatternOfPatterns.Observables;
 
-namespace PatternOfPatterns
+namespace PatternOfPatterns.Factories
 {
     class DuckFactory : AbsractDuckFactory
     {

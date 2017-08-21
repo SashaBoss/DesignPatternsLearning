@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PatternOfPatterns.Observables;
 
 namespace PatternOfPatterns
 {
@@ -11,6 +12,7 @@ namespace PatternOfPatterns
         private readonly IQuackable _duck;
         private static int _nubmerOfQuacks;
         private readonly Observable _observable;
+
         public QuackCounter(IQuackable duck)
         {
             _duck = duck;

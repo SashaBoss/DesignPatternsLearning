@@ -1,24 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using PatternOfPatterns.Observables;
 
-namespace PatternOfPatterns
+namespace PatternOfPatterns.Ducks
 {
-    class DuckCall : IQuackable
+    class GooseAdapter : IQuackable
     {
+        private readonly Goose _goose;
         private readonly Observable _observable;
 
-        public DuckCall()
+        public GooseAdapter(Goose goose)
         {
+            _goose = goose;
             _observable = new Observable(this);
         }
 
         public void Quack()
         {
-            Console.WriteLine("Kwak");
-            NotifyObservers();
+            _goose.Honk();
         }
 
         public void RegisterObserver(IObserver o)

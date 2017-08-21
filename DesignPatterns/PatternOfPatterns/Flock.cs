@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PatternOfPatterns.Observables;
 
 namespace PatternOfPatterns
 {
@@ -18,6 +19,7 @@ namespace PatternOfPatterns
         public void Quack()
         {
             _quackers.ForEach(q => q.Quack());
+            NotifyObservers();
         }
 
         public void RegisterObserver(IObserver o)
