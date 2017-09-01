@@ -3,14 +3,14 @@ using Factory.Products.Pizza;
 
 namespace Factory.Factories
 {
-    public class NYPizzaStore : PizzaStore
+    public class NewYorkPizzaStore : PizzaStore
     {
         protected override Pizza CreatePizza(string type)
         {
             switch (type)
             {
                 case "cheese":
-                    return new NYStyleCheesePizza();
+                    return new NewYorkStyleCheesePizza();
                 default:
                     {
                         return null;

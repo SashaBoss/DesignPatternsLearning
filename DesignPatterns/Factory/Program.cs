@@ -11,8 +11,8 @@ namespace Factory
     {
         static void Main(string[] args)
         {
-            var nyStore = new NYPizzaStore();
-            var chicagoStore = new ChicagoPizzaStore();
+            PizzaStore nyStore = new NewYorkPizzaStore();
+            PizzaStore chicagoStore = new ChicagoPizzaStore();
 
             var nyCheesePizza = nyStore.OrderPizza("cheese");
             var chicagoCheesePizza = chicagoStore.OrderPizza("cheese");

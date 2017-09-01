@@ -7,7 +7,7 @@ using Factory.Products.Ingredients;
 
 namespace Factory.Factories
 {
-    public class NYPizzaIngredientFactory : IPizzaIngredientsFactory
+    public class NewYorkPizzaIngredientFactory : IPizzaIngredientsFactory
     {
         public Dough CreateDough()
         {

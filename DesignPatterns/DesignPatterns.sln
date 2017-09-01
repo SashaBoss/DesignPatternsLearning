@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy", "Proxy\Proxy.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternOfPatterns", "PatternOfPatterns\PatternOfPatterns.csproj", "{D03F2C26-7C4F-42CC-BA51-2D626FE0CC19}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC", "MVC\MVC.csproj", "{FB60FB6A-0C98-4EC5-86E5-E359C4480ECD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{D03F2C26-7C4F-42CC-BA51-2D626FE0CC19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D03F2C26-7C4F-42CC-BA51-2D626FE0CC19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D03F2C26-7C4F-42CC-BA51-2D626FE0CC19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB60FB6A-0C98-4EC5-86E5-E359C4480ECD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB60FB6A-0C98-4EC5-86E5-E359C4480ECD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB60FB6A-0C98-4EC5-86E5-E359C4480ECD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB60FB6A-0C98-4EC5-86E5-E359C4480ECD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
